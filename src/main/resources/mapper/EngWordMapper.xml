@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.eng.word.mapper.EngWordMapper">
+
+    <resultMap id="engWordResultMap" type="com.eng.word.vo.EngWordVO">
+        <id property="id" column="id"/>
+        <result property="eng_word" column="eng_word"/>
+        <result property="meaning" column="meaning"/>
+        <result property="pronunciation" column="pronunciation"/>
+        <result property="part_of_speech" column="part_of_speech"/>
+        <result property="example_sentence" column="example_sentence"/>
+        <result property="difficulty_level" column="difficulty_level"/>
+        <result property="created_by" column="created_by"/>
+        <result property="modified_by" column="modified_by"/>
+    </resultMap>
+
+    <select id="getAllEngWordList" resultMap="engWordResultMap">
+        SELECT * FROM eng_word
+    </select>
+
+    <select id="getEngWordById" resultMap="engWordResultMap">
+        SELECT * FROM eng_word WHERE id = #{id}
+    </select>
+
+</mapper>

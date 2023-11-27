@@ -1,0 +1,29 @@
+# server
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# logging
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure: INFO
+
+# postgresql
+spring:
+  datasource:
+    hikari:
+      #hikari.maximum-pool-size: 4
+      jdbc-url: jdbc:postgresql://localhost:5432/eng_word
+      username: postgres
+      password: eng_word!23
+      driver-class-name: org.postgresql.Driver
+
+# mybatis
+#mybatis:
+#  type-aliases-package: com.eng.word.dao
+#  mapper-locations: classpath:/mapper/**/*.xml
+#  configuration.map-underscore-to-camel-case: true
