@@ -15,7 +15,10 @@ public class EngWordVO {
     private String example_sentence;
     private Integer difficulty_level;
     private String created_by;
+    private String created_dt;
     private String modified_by;
+    private String modified_dt;
+
 
     // Getters and setters
 }

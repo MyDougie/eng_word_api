@@ -18,8 +18,8 @@ spring:
     hikari:
       #hikari.maximum-pool-size: 4
       jdbc-url: jdbc:postgresql://localhost:5432/eng_word
-      username: postgres
-      password: eng_word!23
+      username: admin
+      password: admin
       driver-class-name: org.postgresql.Driver
 
 # mybatis

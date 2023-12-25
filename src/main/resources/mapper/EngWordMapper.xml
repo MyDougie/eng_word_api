@@ -11,7 +11,9 @@
         <result property="example_sentence" column="example_sentence"/>
         <result property="difficulty_level" column="difficulty_level"/>
         <result property="created_by" column="created_by"/>
+        <result property="created_dt" column="created_dt"/>
         <result property="modified_by" column="modified_by"/>
+        <result property="modified_dt" column="modified_dt"/>
     </resultMap>
 
     <select id="getAllEngWordList" resultMap="engWordResultMap">

@@ -12,7 +12,8 @@ import java.util.List;
 @RequestMapping("/eng-words")
 public class EngWordController {
 
-    private final EngWordService engWordService;a
+    private final EngWordService engWordService;
+
 
     @GetMapping("/list")
     public List<EngWordVO> getAllEngWords() {
